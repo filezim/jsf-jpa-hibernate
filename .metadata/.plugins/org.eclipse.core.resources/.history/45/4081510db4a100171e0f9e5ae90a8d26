@@ -1,0 +1,28 @@
+package br.com.diego.agenda.dao;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import br.com.diego.agenda.util.HibernateUtil;
+
+public class GenericDAO<Entity> {
+	
+	public void save(Entity entity) {
+		Session session = HibernateUtil.getBuildSessionFactory().openSession();
+		Transaction transaction = null;
+		
+		try {
+			transaction = session.beginTransaction();
+			session.save(entity);
+			transaction.commit();
+		} catch (RuntimeException error) {
+			if (transaction != null) {
+				transaction.rollback();
+			}
+			throw error;
+		}
+	}
+	
+	
+	
+}

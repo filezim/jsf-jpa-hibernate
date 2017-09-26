@@ -1,0 +1,26 @@
+package br.com.diego.agenda.dao;
+
+import org.junit.Test;
+
+import br.com.diego.agenda.entity.Person;
+
+public class PersonDAOTest {
+	@Test
+	public void save() {
+		Person person = new Person();
+		person.setName("Diego Parente");
+		person.setAddress("Rua Primeiro de Maio");
+		person.setCellPhone("0000-0000");
+		person.setCity("Teresina");
+		person.setComplement("Proximo ao senai");
+		person.setCpf("000.000.000-52");
+		person.setDistrict("PI");
+		person.setEmail("diego@gk.com");
+		person.setIdenty("25.631.256-98");
+		person.setPostalCode("64002-510");
+		person.setLandline("3215-7592");
+		
+		PersonDAO personDAO = new PersonDAO();
+		personDAO.save(person);
+	}
+}

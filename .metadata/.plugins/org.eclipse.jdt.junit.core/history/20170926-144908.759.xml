@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PersonDAOTest" project="Agenda" tests="5" started="5" failures="0" errors="0" ignored="4">
+  <testsuite name="br.com.diego.agenda.dao.PersonDAOTest" time="3.522">
+    <testcase name="delete" classname="br.com.diego.agenda.dao.PersonDAOTest" time="0.0" ignored="true"/>
+    <testcase name="search" classname="br.com.diego.agenda.dao.PersonDAOTest" time="0.001" ignored="true"/>
+    <testcase name="update" classname="br.com.diego.agenda.dao.PersonDAOTest" time="0.0" ignored="true"/>
+    <testcase name="list" classname="br.com.diego.agenda.dao.PersonDAOTest" time="0.0" ignored="true"/>
+    <testcase name="save" classname="br.com.diego.agenda.dao.PersonDAOTest" time="3.521"/>
+  </testsuite>
+</testrun>

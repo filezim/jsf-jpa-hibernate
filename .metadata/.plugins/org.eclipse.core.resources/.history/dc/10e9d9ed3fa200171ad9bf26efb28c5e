@@ -1,0 +1,16 @@
+package br.com.diego.agenda.bean;
+
+import javax.faces.application.FacesMessage;
+import javax.faces.bean.ManagedBean;
+import javax.faces.context.FacesContext;
+
+@ManagedBean
+public class PersonBean {
+	public void save(){
+		String text = "Programação Web com Java";
+		FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_ERROR, text, text);
+		
+		FacesContext context = FacesContext.getCurrentInstance();
+		context.addMessage(null, message);
+	}
+}
